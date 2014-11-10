@@ -54,7 +54,7 @@ password_required = Required(message='PASSWORD_NOT_PROVIDED')
 password_length = Length(min=6, max=128, message='PASSWORD_INVALID_LENGTH')
 
 
-class LabelProxy(unicode):
+class LabelProxy(str):
     def __init__(self, key):
         self._key = key
 
