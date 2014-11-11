@@ -51,7 +51,7 @@ class Length(ValidatorMixin, validators.Length):
 email_required = Required(message='EMAIL_NOT_PROVIDED')
 email_validator = Email(message='INVALID_EMAIL_ADDRESS')
 password_required = Required(message='PASSWORD_NOT_PROVIDED')
-password_length = Length(min=6, max=128, message='PASSWORD_INVALID_LENGTH')
+password_length = Length(min=8, max=128, message='PASSWORD_INVALID_LENGTH')
 
 
 class LabelProxy(str):
