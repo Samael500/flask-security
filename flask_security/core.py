@@ -263,7 +263,7 @@ def _get_login_manager(app):
 
 
 def _get_principal(app):
-    p = Principal(app, use_sessions=False)
+    p = Principal(app)
     p.identity_loader(_identity_loader)
     return p
 
